@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Linkin Park</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 20px;
+            text-align: center;
+            border: solid 2px;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+            border: solid 2px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tfoot {
+            background-color: #333;
+            color: white;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .menu-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .menu-table th {
+            background-color: #333;
+            color: white;
+            border: solid 2px;
+            padding: 10px;
+        }
+
+        .menu-table th a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .menu-table th a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">
+                    <h1 style="color: white">Linkin Park</h1>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width: 100%; vertical-align: top;">
+                    <table class="menu-table">
+                        <tr>
+                            <th><a href="#biografia">Biografia</a></th>
+                            <th><a href="#albuns">Álbuns</a></th>
+                            <th><a href="#agenda">Agenda</a></th>
+                            <th><a href="#contato">Contato</a></th>
+                        </tr>
+                    </table>
+                </td>
+                <td rowspan="4" style="width: 80%; vertical-align: top;" id="">
+                    <div class="content" id="biografia">
+                        <h2>Biografia</h2>
+                        <p>Linkin Park é uma banda estadunidense de rock formada em 1996 em Agoura Hills, na Califórnia.
+                            A banda é formada por Mike Shinoda (vocalista), Brad Delson (guitarra), Dave Farrell (baixista),
+                            Joe Hahn (DJ) e Rob Bourdon (baterista). Por muitos anos, foi formada também por Chester Bennington no vocal, mas o cantor morreu em 2017. A banda passou a se chamar Linkin Park uma homenagem a vizinhança Lincon Park para onde os desabrigados costumavam ir. A banda mudou de nome por que já existia um domínio na internet com esse nome e era muito caro. Depois assinaram um contrato com Warner Bros e foi aí que a banda começou a ser conhecida.</p>
+                    </div>
+                    <div class="content" id="albuns">
+                        <h2>Álbuns</h2>
+                        <ul>
+                            <li><a href="albums.html">Hybrid Theory (2000)</a></li>
+                            <li><a href="albums.html">Meteora (2003)</a></li>
+                            <li><a href="albums.html">Minutes to Midnight (2007)</a></li>
+                            <li><a href="albums.html">A Thousand Suns (2010)</a></li>
+                            <li><a href="albums.html">Living Things (2012)</a></li>
+                            <li><a href="albums.html">The Hunting Party (2014)</a></li>
+                            <li><a href="albums.html">One More Light (2017)</a></li>
+                        </ul>
+                    </div>
+                    <div class="content" id="agenda">
+                        <h2>Agenda</h2>
+                        <p>Confira as datas dos nossos próximos shows e eventos:</p>
+                        <ul>
+                            <li>Dia: 7 de outubro - São Paulo </li>
+                            <li>Dia: 8 de outubro - Rio de Janeiro</li>
+                            <li>Dia: 10 de outubro - Curitiba</li>
+                            <li>Dia: 11 de outubro - Porto Alegre</li>
+                        </ul>
+                    </div>
+                    <div class="content" id="contato">
+                        <h2>Contato</h2>
+                        <p>Entre em contato conosco através do formulário abaixo:</p>
+                        <form>
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+
+                            <label for="message">Mensagem:</label><br>
+                            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5"> &copy; 2023 Linkin Park</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- JavaScript para alternar entre as páginas -->
+    <script>
+        const menuLinks = document.querySelectorAll(".menu-table th a");
+        const contents =

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="text-align: center!important;">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="biografia-tab" data-toggle="tab" href="#biografia" role="tab"
+                    aria-controls="biografia" aria-selected="true">Biografia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="albuns-tab" data-toggle="tab" href="#albuns" role="tab" aria-controls="albuns"
+                    aria-selected="false">Albuns</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="agenda-tab" data-toggle="tab" href="#agenda" role="tab" aria-controls="agenda"
+                    aria-selected="false">Agenda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contato-tab" data-toggle="tab" href="#contato" role="tab"
+                    aria-controls="contato" aria-selected="false">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="media-tab" data-toggle="tab" href="#media" role="tab" aria-controls="media"
+                    aria-selected="false">Mídia</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="biografia" role="tabpanel" aria-labelledby="biografia-tab">
+                <br>
+                <h2>Biografia</h2>
+                <p>Linkin Park é uma banda estadunidense de rock formada em 1996 em Agoura Hills, na Califórnia.
+                    A banda é formada por Mike Shinoda (vocalista), Brad Delson (guitarra), Dave Farrell (baixista),
+                    Joe Hahn (DJ) e Rob Bourdon (baterista). Por muitos anos, foi formada também por Chester Bennington
+                    no vocal, mas o cantor morreu em 2017. A banda passou a se chamar Linkin Park uma homenagem a
+                    vizinhança Lincon Park para onde os desabrigados costumavam ir. A banda mudou de nome por que já
+                    existia um domínio na internet com esse nome e era muito caro. Depois assinaram um contrato com
+                    Warner Bros e foi aí que a banda começou a ser conhecida.</p>
+            </div>
+            <div class="tab-pane fade" id="albuns" role="tabpanel" aria-labelledby="albuns-tab">
+                <h2>Álbuns</h2>
+                <ul>
+                    <li><a href="albums.html">Hybrid Theory (2000)</a></li>
+                    <li><a href="albums.html">Meteora (2003)</a></li>
+                    <li><a href="albums.html">Minutes to Midnight (2007)</a></li>
+                    <li><a href="albums.html">A Thousand Suns (2010)</a></li>
+                    <li><a href="albums.html">Living Things (2012)</a></li>
+                    <li><a href="albums.html">The Hunting Party (2014)</a></li>
+                    <li><a href="albums.html">One More Light (2017)</a></li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="agenda" role="tabpanel" aria-labelledby="agenda-tab">
+                <h2>Agenda</h2>
+                <p>Confira as datas dos nossos próximos shows e eventos:</p>
+                <ul>
+                    <li>Dia: 7 de outubro - São Paulo </li>
+                    <li>Dia: 8 de outubro - Rio de Janeiro</li>
+                    <li>Dia: 10 de outubro - Curitiba</li>
+                    <li>Dia: 11 de outubro - Porto Alegre</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="contato" role="tabpanel" aria-labelledby="contato-tab">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco através do formulário abaixo:</p>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Mensagem:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="tab-pane fade" id="media" role="tabpanel" aria-labelledby="media-tab">
+                <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/f/a/7/4/1741091681325768.jpg" alt=""
+                    width="300">
+                <br>
+                <hr>
+                <audio controls
+                    src="https://ia903405.us.archive.org/17/items/linkin-park_20210509/03%20-%20Somewhere%20I%20Belong.mp3"></audio>
+
+                <hr><br>
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/WNeLUngb-Xg?si=dggW7-bySVq-i4VQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
